@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+}
+.logoframe{
+background-color: #fff;
+align-items: center;
+justify-content: space-between;
+padding: 20px 50px;
+display: flex;
+width: 100%;
+}
+.openframe{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+hr{
+    width: 200px;
+    height: 0px;
+}
+.miniframe{
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+}
+.centeredtext{
+    text-align: center;
+    padding: 70px 0;
+}
+.space{
+    padding: 30px 0;
+}
+.frame8container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    padding:0 150px;
+    gap:30px;
+    justify-content: center;
+}
+img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    /* text-align: center; */
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0; 
+}
+ .button{
+  text-align: right;
+  justify-content:space-between;
+} 
+#button1{
+    padding: 10px 20px;
+    background: #F6F0E8;
+    margin-bottom: 5px;
+}
+#button2{
+    padding: 10px 20px;
+    color: #fff;
+    background: #14203E;
+}
+#button3{
+    padding: 20px;
+    background: #14203E;
+    color: #fff;
+}
+button{
+    border-radius: 5px;
+    border: none;
+}
+.container1{
+    background: #FFFCF8;
+}
+.regularfont{
+    font-weight: 700;
+    font-size: 22px;
+}
+.cancle{
+    display: none;
+    font-family: monospace;
+    font-size: xxx-large;
+    font-weight:-10;
+}
+.hambuger{
+    display: none;
+}
+#line1{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+}
+#line2{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    margin: 3px 0;
+}
+#line3{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+}
+ @media only screen and (max-width:550px){
+     .button{
+        text-align: center;
+        display: flex;
+        padding: 50px 0;
+        width: 300px;
+        justify-content: center;
+    } 
+    .logoframe{
+        display: flex;
+        padding: 10px 10px;
+    }
+    .miniframe{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px 0;
+        height: 80%;
+        font-size: x-large;
+        text-align: center;
+        width: 300px;
+    } 
+    .flex{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    
+    .closeframe{
+        display: block;
+        justify-content: baseline;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: #d8e6e4;
+        padding:0 20px;
+        transform: translateX(0%);
+        transition: 0.5s;
+        /* z-index: ; */
+    }.openframe{
+        transform: translateX(120%);
+    }
+    #button1{
+        padding: 10px;
+        margin: 0 30px;
+    }
+    #button2{
+        padding: 10px;
+    }
+    .cancle{
+        display: flex;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+    .hambuger{
+        display: flex;
+        flex-direction: column;
+        /* position: absolute;
+        top: 5px; */
+    }
+    .frame8container{
+        padding: 20px;
+    }
+}
+.logo{
+    font-family: IBM Plex Sans;
+    font-size: 22px;
+    font-weight: 800;
+    color: #14203E3D;
+}
+.bigfont{
+    font-weight: 700;
+    font-size: 66px; 
+}
+.date{
+    color: #14203E;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;    
+}

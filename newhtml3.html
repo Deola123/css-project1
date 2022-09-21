@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./newcss3.css">
+</head>
+<body>
+    <div class="mainframe">
+        <div class="container">
+            <div class="container1">
+                <div class="logoframe">
+                    <div class="logo"><p>LOGO</p></div>
+                    <div class="hambuger" >
+                        <span id="line1"></span>
+                        <span id="line2"></span>
+                        <span id="line3"></span>
+                    </div>
+                    <div class="closeframe openframe" id="div2">
+                        <div class="miniframe">
+                            <p>Home</p>
+                            <p>Articles</p>
+                            <p>Pricing</p>
+                            <p>About</p>
+                            <p>Contact</p>
+                        </div>
+                        <div class="button">
+                            <button id="button1">Log In</button>
+                            <button id="button2">Start Free Trial</button>
+                        </div> 
+                            <p class="cancle">x</p>
+                    </div> 
+                </div>
+                <div class="centeredtext">
+                    <h1 class="bigfont">A modern way to <br> build websites.</h1>
+                    <p class="space">Empower designers to build professional, custom <br> websites in a completely visual canvas with no code.</p>
+                    <button id="button3">Start Free Trial</button>
+                </div>
+            </div>
+            <div>
+                <div class="flex">
+                    <hr>
+                     <span>We share our thoughts on design</span>
+                    <hr>
+                    </div>
+                <div class="frame8container">
+                    <div class="frame8">
+                        <img src="./Rectangle 8.png" alt="">
+                        <p class="regularfont">Redesigning my site increased sales by over 400% in one week.</p>
+                        <p class="date">Jul 1, 2020</p>
+                    </div>
+                    <div class="frame8">
+                        <img src="./Rectangle 8 (1).png" alt="">
+                        <p class="regularfont">Design handoff: What engineers really want to see</p>
+                        <p class="date">Jul 1, 2020</p>
+                    </div>
+                    <div class="frame8">
+                        <img src="./Rectangle 8 (2).png" alt="">
+                        <p class="regularfont">A comprehensive list of  human-computer <br> interactions</p>
+                        <p class="date">Jul 1, 2020</p>
+                    </div>
+                    <div class="frame8">
+                        <img src="./Rectangle 8 (3).png" alt="">
+                        <p class="regularfont">Why do people hate redesigns?</p>
+                        <p class="date">Jul 1, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    function handleHamburger () {
+        const hambuger = document.querySelector('.hambuger')
+        hambuger.addEventListener('click',  () => {
+            document.querySelector('#div2').classList.toggle('openframe')
+        })
+        const cancle = document.querySelector('.cancle')
+        cancle.addEventListener('click', () => {
+            document.querySelector('#div2').classList.toggle('openframe')
+        })
+    }
+
+    handleHamburger ()
+    </script>
+</body>
+
+</html>

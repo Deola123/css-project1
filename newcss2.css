@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+}
+.container {
+  max-width: 100%;
+  border-radius: 50px;
+  background: #eff0f1;
+  padding: 50px;
+  justify-content: center;
+}
+.wrapper {
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 24px;
+}
+.img {
+  display: block;
+  width: 100%;
+}
+.img1 {
+  width: 100%;
+}
+button {
+  border: none;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 10px 10px 0;
+}
+.font {
+  font-weight: bold;
+  font-family: 'Merriweather';
+  font-weight: 700;
+}
+.span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.semiwrapper1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px 0px;
+}
+.span1 {
+  display: flex;
+  align-items: center;
+}
+.maincontainer {
+  background: #e5e5e5;
+  padding: 20px 10px;
+  width: 100%;
+}
+.button {
+  /* display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-gap: 10px; */
+  padding: 25px 0;
+  /* justify-content: inherit; */
+}
+.test {
+  padding: 40px 0;
+  /* max-width: fit-content; */
+  justify-content: baseline;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    padding: 10px;
+  }
+}
